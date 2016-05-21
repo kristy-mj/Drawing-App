@@ -10,7 +10,8 @@ function saveImage() {
   request.onreadystatechange = function() {
     if (request.readyState == 4 && request.status == 200) {
       var response = request.responseText;
-      window.open('download.php?file='+response, '_blank', 'location=0, menubar=0');
+      // window.open('download.php?file='+response, '_blank', 'location=0, menubar=0');
+      document.getElementById('downloadframe').src = 'download.php?file='+response;
     }
   }
 
@@ -18,5 +19,4 @@ function saveImage() {
   request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
   request.send('img='+data);
 
-  // window.open(data, '_blank', 'location=0, menubar=0');
 }
