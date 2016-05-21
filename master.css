@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 #toolbar {
@@ -10,4 +11,14 @@
   position: fixed;
   top: 0;
   background-color: #2f2f2f;
+  color: #fff;
+}
+
+.radcontrol {
+  width: 30px;
+  height: 30px;
+  background-color: #555;
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
 }
